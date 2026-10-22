@@ -1,0 +1,68 @@
+{
+  "_note": "Made-up sample data in the shape of Kalshi's /events response, for offline testing. Prices are not real.",
+  "events": [
+    {
+      "event_ticker": "KXFEDDECISION-26OCT",
+      "title": "Fed decision in October 2026",
+      "category": "Economics",
+      "markets": [
+        {"ticker": "KXFEDDECISION-26OCT-C25", "status": "active", "yes_sub_title": "Cut 25bps",
+         "yes_bid": 62, "yes_ask": 64, "no_bid": 36, "no_ask": 38, "last_price": 63,
+         "volume_24h": 18250, "open_interest": 90210, "closes_in_days": 24,
+         "rules_primary": "If the Federal Reserve announces a cut of 25 basis points to the target federal funds rate at its October 2026 meeting, the market resolves to Yes."},
+        {"ticker": "KXFEDDECISION-26OCT-H0", "status": "active", "yes_sub_title": "Hold",
+         "yes_bid": 33, "yes_ask": 35, "no_bid": 65, "no_ask": 67, "last_price": 34,
+         "volume_24h": 11040, "open_interest": 51200, "closes_in_days": 24,
+         "rules_primary": "If the Federal Reserve leaves the target federal funds rate unchanged at its October 2026 meeting, the market resolves to Yes."}
+      ]
+    },
+    {
+      "event_ticker": "KXCPIYOY-26SEP",
+      "title": "CPI year-over-year for September 2026",
+      "category": "Economics",
+      "markets": [
+        {"ticker": "KXCPIYOY-26SEP-T2.8", "status": "active", "yes_sub_title": "Above 2.8%",
+         "yes_bid_dollars": "0.4100", "yes_ask_dollars": "0.4300", "no_bid_dollars": "0.5700", "no_ask_dollars": "0.5900",
+         "last_price_dollars": "0.4200", "volume_24h": 6400, "open_interest": 22000, "closes_in_days": 11,
+         "rules_primary": "If the BLS reports year-over-year CPI-U for September 2026 above 2.8%, the market resolves to Yes."}
+      ]
+    },
+    {
+      "event_ticker": "KXNFLGAME-26OCT11KCBUF",
+      "title": "Chiefs vs Bills, Oct 11",
+      "category": "Sports",
+      "markets": [
+        {"ticker": "KXNFLGAME-26OCT11KCBUF-KC", "status": "active", "yes_sub_title": "Kansas City wins",
+         "yes_bid": 47, "yes_ask": 49, "no_bid": 51, "no_ask": 53, "last_price": 48,
+         "volume_24h": 25300, "open_interest": 70400, "closes_in_days": 7,
+         "rules_primary": "If Kansas City wins the game against Buffalo scheduled for October 11, 2026, the market resolves to Yes."}
+      ]
+    },
+    {
+      "event_ticker": "KXHIGHNY-26OCT05",
+      "title": "Highest temperature in NYC on Oct 5",
+      "category": "Climate and Weather",
+      "markets": [
+        {"ticker": "KXHIGHNY-26OCT05-T70", "status": "active", "yes_sub_title": "70° or above",
+         "yes_bid": 55, "yes_ask": 58, "no_bid": 42, "no_ask": 45, "last_price": 56,
+         "volume_24h": 3100, "open_interest": 8800, "closes_in_days": 1,
+         "rules_primary": "If the highest temperature recorded in Central Park on October 5, 2026 per the NWS Climatological Report is 70°F or above, the market resolves to Yes."}
+      ]
+    },
+    {
+      "event_ticker": "KXBTCD-26OCT10",
+      "title": "Bitcoin price on Oct 10",
+      "category": "Crypto",
+      "markets": [
+        {"ticker": "KXBTCD-26OCT10-T150000", "status": "active", "yes_sub_title": "$150,000 or above",
+         "yes_bid": 2, "yes_ask": 3, "no_bid": 97, "no_ask": 98, "last_price": 2,
+         "volume_24h": 9000, "open_interest": 40000, "closes_in_days": 6,
+         "rules_primary": "Near-certain market, should be filtered out by the 5-95% band."},
+        {"ticker": "KXBTCD-26OCT10-T120000", "status": "active", "yes_sub_title": "$120,000 or above",
+         "yes_bid": 38, "yes_ask": 40, "no_bid": 60, "no_ask": 62, "last_price": 39,
+         "volume_24h": 120, "open_interest": 900, "closes_in_days": 6,
+         "rules_primary": "Low-volume market, should be filtered out by --min-volume."}
+      ]
+    }
+  ]
+}
